@@ -1,0 +1,126 @@
+*{
+    overflow: auto;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+    grid-gap: 5px;background: gainsboro;
+}
+/*.header-left{
+    background: url("images/pic1.png") no-repeat;
+    background-size: 100% 100%;
+}*/
+
+.header-right{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px;
+    grid-gap: 5px;
+}
+.hr-item{
+    background: white;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 5px;
+    grid-gap: 5px;
+}
+.hr-item > .one{
+    text-align: center;
+}
+.hr-item > .two{
+    font-family: 'Courier New', Courier, monospace;
+    color: dodgerblue;
+}
+.hr-subItem > p, .hr-subItem > small{color: white;}
+.hr-one{
+    background: url("images/webdev.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.hr-two{
+    background: url("images/data.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+input{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 2.5px;
+    border: 2px solid dodgerblue;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.grid-item:hover{
+    border: 1px solid rgba(41, 111, 133, 0.24);
+}
+.grid-item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.grid-item > .one{
+    width: 20%;
+    
+    color: white;
+    border-radius: 8px;
+}
+.grid-item > .two{
+    width: 75%;
+    padding: 0px;
+}
+p{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 0px; display: inline-block;color: black;}
+small{color: gray; font-family: 'Courier New', Courier, monospace;margin: 0px; display: block;}
+h5{color: rebeccapurple;margin: 0;padding: 0;}
+
+@media only screen and (min-width: 600px) {
+    header{
+        display: grid;
+        grid-template-columns: 49.5% 49.5%;
+        padding: 1%;
+        grid-gap: 5px;background: gainsboro;
+    }
+    .header-right{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 5px;
+        grid-gap: 5px;
+    }
+    
+    
+    .hr-item > .one{
+        text-align: center;
+    }
+    .hr-item > .two{
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+
+    input{
+        width: 30%;
+    }
+    
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        padding: 30px 20px;
+        gap: 30px 20px;
+    }
+    
+    
+}
