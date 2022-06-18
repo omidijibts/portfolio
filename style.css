@@ -8,48 +8,58 @@ body{
     margin: 0;
     padding: 0;
 }
+header small{color: white;}
+h1{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0;}
+h3{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: dodgerblue; margin: 0;}
+h4{font-family: monospace; margin: 0px;color: black;}
+p{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0px; color: black;}
+small{color: gray; font-family: 'Courier New', Courier, monospace;margin: 0px; display: block;}
+h5{color: rebeccapurple;margin: 0;padding: 0;}
+
+
+/*Header*/
 header{
     display: grid;
     grid-template-columns: auto;
     padding: 5px;
-    grid-gap: 5px;background: gainsboro;
+    grid-gap: 5px;background: linear-gradient(to right,#03045e,gainsboro);
 }
-/*.header-left{
-    background: url("images/pic1.png") no-repeat;
+header i {color: black;font-size: 25px;height: 40px;}
+
+.header-left{
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 5px;
+    gap: 5px;
+}
+.hl-item1{
+    background: url("images/dp.jpg") no-repeat;
     background-size: 100% 100%;
-}*/
+    border-radius: 50%;
+}
 
 .header-right{
     display: grid;
     grid-template-columns: auto auto;
+    
     padding: 5px;
     grid-gap: 5px;
 }
 .hr-item{
-    background: white;
+    
     display: grid;
-    grid-template-columns: auto;
-    padding: 5px;
-    grid-gap: 5px;
+    grid-template-columns: auto 70%;
+    padding: 10px;
+    grid-gap: 10px;
 }
-.hr-item > .one{
-    text-align: center;
-}
+
 .hr-item > .two{
     font-family: 'Courier New', Courier, monospace;
     color: dodgerblue;
 }
-.hr-subItem > p, .hr-subItem > small{color: white;}
-.hr-one{
-    background: url("images/webdev.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.hr-two{
-    background: url("images/data.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+
+/*Main*/
+main i{font-size: 15px;height: 65px;color: orangered;padding-top: 5px;}
 input{
     display: block;
     width: 80%;
@@ -74,8 +84,7 @@ input{
     padding: 10px;
 }
 .grid-item > .one{
-    width: 20%;
-    
+    width: 10%;
     color: white;
     border-radius: 8px;
 }
@@ -83,31 +92,66 @@ input{
     width: 75%;
     padding: 0px;
 }
-p{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin: 0px; display: inline-block;color: black;}
-small{color: gray; font-family: 'Courier New', Courier, monospace;margin: 0px; display: block;}
-h5{color: rebeccapurple;margin: 0;padding: 0;}
+
+/*Footer*/
+footer{
+    margin-top: 100px;
+}
+footer h4{color: white;margin-bottom: 10px;}
+footer p{font-size: 16px;font-family: serif;}
+footer li p{display: inline-block;}
+footer i{color: #03045e;}
+
+.connect{background: #03055e3d;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+[class*='col-']{
+    background: #03055e3d;
+    padding: 20px;
+}
+
+ul{margin: 0;padding: 0;}
+button{
+    color: white;
+    background: linear-gradient(to right,#03045e,gainsboro);
+    margin-top: 5px;
+    border-radius: 8px;
+}
+.copyright{background: #03045e;
+    text-align: center;
+    padding: 5px;
+    color: grey;
+}
+
+
+
+
 
 @media only screen and (min-width: 600px) {
     header{
         display: grid;
         grid-template-columns: 49.5% 49.5%;
         padding: 1%;
-        grid-gap: 5px;background: gainsboro;
+        grid-gap: 5px;background: linear-gradient(to right,#03045e,gainsboro);
     }
     .header-right{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 18.75% 18.75% 18.75% 18.75%;
+        padding: 5%;
+        grid-gap: 5%;
+    }
+    
+    .hr-item{
+        
+        display: grid;
+        grid-template-columns: auto;
         padding: 5px;
         grid-gap: 5px;
     }
     
-    
-    .hr-item > .one{
-        text-align: center;
-    }
     .hr-item > .two{
-        font-family: 'Courier New', Courier, monospace;
-        
+        font-family: 'Courier New', Courier, monospace;  
     }
 
     input{
@@ -119,7 +163,7 @@ h5{color: rebeccapurple;margin: 0;padding: 0;}
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         padding: 30px 20px;
-        gap: 30px 20px;
+        gap: 30px 10px;
     }
     
     
